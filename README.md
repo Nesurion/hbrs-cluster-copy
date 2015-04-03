@@ -9,8 +9,10 @@ If your are not on that course, this wont help you ;)
 3. `export CLUSTER_USERNAME="your_username"`, replace `your_username` with your hbrs id eg: mmustr2s
 4. `alias clustercp="ruby /full_path/to/hbrs-cluster-copy/cluster_copy.rb"`, you can replace `clustercp` with whatever you like
 5. Login on the cluster and append your local `~/.ssh/id_rsa.pub` to `~/.ssh/authorized_keys`
-5. done!
----
+6. done!
+
+
+
 Important Note: Create a folder called `parprog`, where you place your uebung folders.
 It's critical that the folder name matches, otherwise the script won't work!
 
