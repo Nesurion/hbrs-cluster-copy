@@ -1,6 +1,6 @@
 # hbrs-cluster-copy
 Copy files to the hbrs with ease.
-This script is specific to the course *parallele Programmierung* held at Hochschule Bonn-Rhein-Sieg by Prof. Dr. Rudolf Berrendorf.
+This script is specific to the course *Programmierung paralleler Anwendungen* held at Hochschule Bonn-Rhein-Sieg by Prof. Dr. Rudolf Berrendorf.
 If your are not on that course, this wont help you ;)
 
 # Setup
