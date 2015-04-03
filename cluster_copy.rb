@@ -13,11 +13,6 @@ level1 = path_array[-3]
 level2 = path_array[-2]
 level3 = path_array[-1]
 
-p "level1: #{level1}"
-p "level2: #{level2}"
-p "level3: #{level3}"
-p "arg: #{arg}\n"
-
 if level3 == "parprog"
   # farly safe to assume we are in the right folder and user intended to copy a whole uebung folder
   # create uebung folder
