@@ -17,9 +17,7 @@ if level3 == "parprog"
   # farly safe to assume we are in the right folder and user intended to copy a whole uebung folder
   # create uebung folder
   system("rsync -ave ssh #{arg} #{cluster_username}@wr0.wr.inf.h-brs.de:parprog/")
-end
-
-if level3 =~ /u[0-9]/
+elsif level3 =~ /u[0-9]/
   # source is a uebung folder and we want to copy a whole aufgabe folder
   system("rsync -ave ssh #{arg} #{cluster_username}@wr0.wr.inf.h-brs.de:parprog/#{level3}")
 elsif level2 =~ /u[0-9]/ and level3 =~ /a[0-9]/ 
@@ -27,5 +25,6 @@ elsif level2 =~ /u[0-9]/ and level3 =~ /a[0-9]/
   # cant copy single file if uebung folder on cluster doesn't exist
   system("rsync -ave ssh #{arg} #{cluster_username}@wr0.wr.inf.h-brs.de:parprog/#{level2}/#{level3}/")
 else
-  p "path doesn't match. be sure to copy eighter a aufgabe file, aufgabe folder or u2 folder."
+  # source folder doesn't match any of the pattern above
+  p "path doesn't match. be sure to copy eighter a aufgabe file, aufgabe folder or uebung folder."
 end
